@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Makson19/intro-component-with-sign-up-form](https://github.com/Makson19/intro-component-with-sign-up-form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://makson19.github.io/intro-component-with-sign-up-form/](https://makson19.github.io/intro-component-with-sign-up-form/)
 
 ## My process
 
