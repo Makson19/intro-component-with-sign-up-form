@@ -1,0 +1,41 @@
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    transition: 0.3s;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5rem 1.6rem;
+}
+
+
+// ===== Media Queries ===== //
+// min-width: 600px
+@media (min-width: 37.5rem) {
+    body {
+        padding: 5rem 5rem;
+        background-color: hsl(0, 100%, 74%) ;
+        background-image: url(../images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+// min-width: 830px
+@media (min-width: 51.875rem) {
+    body {
+        padding: 5rem 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

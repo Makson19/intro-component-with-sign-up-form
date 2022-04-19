@@ -1,0 +1,249 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5rem 1.6rem;
+}
+
+@media (min-width: 37.5rem) {
+  body {
+    padding: 5rem 5rem;
+    background-color: #ff7a7a;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 51.875rem) {
+  body {
+    padding: 5rem 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90rem;
+  max-height: 50rem;
+}
+
+.container .description {
+  margin-bottom: 3rem;
+}
+
+.container .description .title {
+  color: white;
+  font: 700 1.8rem "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container .description .paragraph {
+  color: white;
+  font: 400 1rem "Poppins", sans-serif;
+  text-align: center;
+}
+
+.container .sign-up {
+  max-width: 480px;
+}
+
+.container .sign-up .promotion {
+  background-color: #6055a5;
+  padding: 1rem 3.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.14);
+}
+
+.container .sign-up .promotion p {
+  color: white;
+  font: 600 0.9rem "Poppins", sans-serif;
+  text-align: center;
+}
+
+.container .sign-up .promotion p span {
+  color: #b9b6d3;
+  font: 400 0.9rem "Poppins", sans-serif;
+}
+
+.container .sign-up .form {
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.9rem;
+}
+
+.container .sign-up .form .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.container .sign-up .form .wrap > input {
+  height: 50px;
+  width: 100%;
+  padding: 1rem;
+  font: 600 0.85rem "Poppins", sans-serif;
+  border: 1px solid #b9b6d3;
+  border-radius: 0.3rem;
+}
+
+.container .sign-up .form .wrap > .icon-error, .container .sign-up .form .wrap .icon-success {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  visibility: hidden;
+}
+
+.container .sign-up .form .wrap > small {
+  color: #ff7a7a;
+  font: 500 0.675rem "Poppins", sans-serif;
+  font-style: italic;
+  text-align: right;
+  margin-top: 0.3rem;
+  display: none;
+}
+
+.container .sign-up .form button {
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 0.4rem;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+  font: 500 0.9rem "Poppins", sans-serif;
+}
+
+.container .sign-up .form button:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #78e2b4;
+}
+
+.container .sign-up .form .terms {
+  color: #b9b6d3;
+  font: 600 0.7rem "Poppins", sans-serif;
+  text-align: center;
+  padding: 0 1.1rem;
+}
+
+.container .sign-up .form .terms a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.container .sign-up .form .terms a:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #ffa3a3;
+}
+
+.container > .sign-up > .form .error > input {
+  border: 2px solid #ff7a7a;
+}
+
+.container > .sign-up > .form .error .icon-error {
+  visibility: visible;
+}
+
+.container > .sign-up > .form .error > small {
+  display: inline-block;
+}
+
+.container > .sign-up > .form .success > input {
+  border: 2px solid #38cc8c;
+}
+
+.container > .sign-up > .form .success .icon-success {
+  visibility: visible;
+}
+
+@media (min-width: 51.875rem) {
+  .container {
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+  }
+  .container .description {
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .sign-up {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .sign-up .form {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .container {
+    padding: 0 7rem;
+    gap: 2.5rem;
+  }
+  .container .description .title {
+    font-size: 3.1rem;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .container .description .paragraph {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */

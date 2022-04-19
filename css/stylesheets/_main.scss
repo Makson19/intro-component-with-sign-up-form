@@ -1,0 +1,202 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90rem;
+    max-height: 50rem;
+
+    .description {
+        margin-bottom: 3rem;
+
+        .title {
+            color: $white;
+            font: 700 1.8rem $font;
+            text-align: center;
+            margin-bottom: 1rem;;
+        }
+
+        .paragraph {
+            color: $white;
+            font: 400 1rem $font;
+            text-align: center;
+        }
+    }
+
+
+    .sign-up {
+        max-width: 480px;
+
+        .promotion {
+            background-color: $blue;
+            padding: 1rem 3.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.14);
+    
+            p {
+                color: $white;
+                font: 600 0.9rem $font;
+                text-align: center;
+    
+                span {
+                    color: $grayish-blue;
+                    font: 400 0.9rem $font;
+                }
+            }
+        }
+
+        .form {
+            padding: 1.2rem;
+            border-radius: 0.6rem;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+
+            .wrap {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                & > input {
+                    height: 50px;
+                    width: 100%;
+                    padding: 1rem;
+                    font: 600 0.85rem $font;
+                    border: 1px solid $grayish-blue;
+                    border-radius: 0.3rem;
+                }
+
+                & > .icon-error, .icon-success {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    top: 14px;
+                    right: 14px;
+                    visibility: hidden;
+                }
+            
+                & > small {
+                    color: $red;
+                    font: 500 0.675rem $font;
+                    font-style: italic;
+                    text-align: right;
+                    margin-top: 0.3rem;
+                    display: none;
+                }
+            }
+
+            button {
+                background-color: $green;
+                border: none;
+                border-radius: 0.4rem;
+                height: 50px;
+                text-transform: uppercase;
+                color: $white;
+                font: 500 0.9rem $font;
+
+                &:hover {
+                    transition: 0.3s ease-in-out;
+                    background-color: $green-hover;
+                }
+            }
+
+
+            .terms {
+                color: $grayish-blue;
+                font: 600 0.7rem $font;
+                text-align: center;
+                padding: 0 1.1rem;
+
+                a {
+                    text-decoration: none;
+                    color: $red;
+                    font-weight: 700;
+
+                    &:hover {
+                        transition: 0.3s ease-in-out;
+                        color: $red-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ===== Validações ===== //
+.container > .sign-up > .form {
+    .error {
+
+        & > input {
+            border: 2px solid $red;
+        }
+
+        .icon-error {
+            visibility: visible;
+        }
+    
+        & > small {
+            display: inline-block;
+        }
+    }
+
+    .success {
+
+        & > input {
+            border: 2px solid $green;
+        }
+
+        .icon-success {
+            visibility: visible;
+        }
+    }
+}
+
+
+// ===== Media Queries ===== //
+// min-width: 830px
+@media (min-width: 51.875rem) {
+    .container {
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+
+
+        .description {
+            margin: 0;
+            flex: 1;
+        }
+
+        .sign-up {
+            flex: 1;
+
+            .form {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+
+// min-width: 1200px
+@media (min-width: 75rem) {
+    .container {
+        padding: 0 7rem;
+        gap: 2.5rem;
+
+        .description {
+            .title {
+                font-size: 3.1rem;
+                text-align: left;
+                line-height: 1.2;
+            }
+
+            .paragraph {
+                text-align: left;
+            }
+        }
+    }
+}
